@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libro Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- navigation bar starting -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid p-0" style="background-color: lightblue;">
+        <div class="d-flex justify-content-center align-items-center">
+          <a class="navbar-brand" href="#"><img src="./images/book logo.png" alt="book logo" class="booklogo"></a>
+          <a class="navbar-brand" href="#"><h3 class="bookstorename">Libro Store</h3></a>
+        </div>
+        <div class="d-flex width-searchbar">
+          <input class="booknamesearchbar" type="text" placeholder="Search by Title, Author, Publisher or ISBN">
+          <a href="#">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </a>
+
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ml-account justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item profile-option">
+              <a class="nav-link active" aria-current="page" href="#">My Account</a>
+            </li>
+            <li class="nav-item profile-option">
+              <a class="nav-link active" href="#">Cart</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- navigation bar ending -->
+
+    <!-- book list nav bar starting -->
+    <nav class="navbar navbar-expand-lg sec-nav">
+      <div class="container-fluid mx-4">
+        <button class="bookcategorylistbutton navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarBookContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="collapse navbar-collapse book-category" id="navbarBookContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Best Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Fiction Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Award Winners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Featured Authors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Today's Deal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Request a Book</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+    <!-- book list nav bar ending -->
+
+    <!-- carousel section starting -->
+    <div class="saleCaption">
+      Best Selling Books are on sale
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/collage2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block carouseltext-caption">
+            <h5>Upcoming Books of the Week</h5>
+            <p>The Internationally marked Best Sellers are coming this week (Click > to see more)</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/collage3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/collage1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/collage4.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel section ending -->
+
+    <h2 class="text-center m-5">Now Trending</h2>
+    <section class="trendingbook">
+      <div class="booklist">
+        <div class="card trendingcard">
+          <img src="./images/trendingbook1.jpg" class="card-img-top img-height" alt="...">
+          <div class="details">
+            <h5 class="card-title">The Library of Legends</h5>
+            <div class="cardtext-button">
+              <p class="card-text">Author : Janie Chang</p>
+              <p class="card-text"><i class="fa-solid fa-indian-rupee-sign">&nbsp;420</i></p>
+              <a href="#" class="btn btn-secondary fw-bold">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card trendingcard">
+          <img src="./images/trendingbook2.jpg" class="card-img-top img-height" alt="...">
+          <div class="details">
+            <h5 class="card-title">A Season for Tending</h5>
+            <div class="cardtext-button">
+              <p class="card-text">Author : Cindy Woodsmall</p>
+              <p class="card-text"><i class="fa-solid fa-indian-rupee-sign">&nbsp;580</i></p>
+              <a href="#" class="btn btn-secondary fw-bold">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card trendingcard">
+          <img src="./images/trendingbook3.jpg" class="card-img-top img-height" alt="...">
+          <div class="details">
+            <h5 class="card-title">Tending Roses</h5>
+            <div class="cardtext-button">
+              <p class="card-text">Author : Lisa Wingate</p>
+              <p class="card-text"><i class="fa-solid fa-indian-rupee-sign">&nbsp;290</i></p>
+              <a href="#" class="btn btn-secondary fw-bold">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="card trendingcard">
+          <img src="./images/trendingbook4.jpg" class="card-img-top img-height" alt="...">
+          <div class="details">
+            <h5 class="card-title">It Ends with Us</h5>
+            <div class="cardtext-button">
+              <p class="card-text">Author : Colleen Hoover</p>
+              <p class="card-text"><i class="fa-solid fa-indian-rupee-sign">&nbsp;500</i></p>
+              <a href="#" class="btn btn-secondary fw-bold">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="civilbooks">
+      <h2 class="text-center m-5">Top Picks for Civil Engineers</h2>
+      <div class="bookset-imagediv">
+        <!-- <img src="./images/bookset.png" class="booksetimg" alt=""> -->
+      </div>
+    </section>
+
+    <section class="bestsellers">
+      <h2 class="text-center m-5">Best Sellers</h2>
+      <div class="bestsellingbooklist">
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller1.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">Electric Idol
+              <br>
+              (Katee Robert)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>200</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller2.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">2022 Lunar & Sesasonal Diary
+              <br>
+              (Stacey Demarco)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>300</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller3.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">The Sea in your Heart
+              <br>
+              (Kira Mohn)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>350</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller4.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">Let's Do Everything and Nothing
+              <br>
+              (Julia Kuo)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>220</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller5.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">The Wishing Balloons
+              <br>
+              (Jonathan D Voss)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>380</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller6.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">The Hobbit
+              <br>
+              (J.R.R Tolkie)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>270</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller7.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">Azadi
+              <br>
+              (Arundhati Roy)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>310</span>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="bestsellbook-card">
+          <img src="./images/bestseller8.jpg" class="card-img-top bestsellimg-height" alt="...">
+          <div class="middle">
+            <div class="text">The God of Small Things
+              <br>
+              (Arundathi Roy)
+              <br>
+              <span><i class="fa-solid fa-indian-rupee-sign"></i>470</span>
+              <br>
+              <button class="buy-button">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newarrivals">
+      <h2 class="text-center text-light m-5">New Arrivals</h2>
+      <div class="newbooklist">
+        <div class="newbooks-card">
+          <img src="./images/newarrivals1.jpg" class="card-img-top newarrivalimg-height" alt="...">
+          <div class="cardbody">
+            <h2 class="cardtitle">Rivers of London</h2>
+            <p class="cardinfo">Author : Ben Aaronovitch</p>
+            <button class="card-button fw-bold buy-button">Buy Now</button>
+          </div>
+        </div>
+        <div class="newbooks-card">
+          <img src="./images/newarrivals2.jpg" class="card-img-top newarrivalimg-height" alt="...">
+          <div class="cardbody">
+            <h2 class="cardtitle">And Then There Were None</h2>
+            <p class="cardinfo">Author : Agatha Christie</p>
+            <button class="card-button fw-bold buy-button">Buy Now</button>
+
+          </div> 
+        </div>
+        <div class="newbooks-card">
+          <img src="./images/newarrivals3.jpg" class="card-img-top newarrivalimg-height" alt="...">
+          <div class="cardbody">
+            <h2 class="cardtitle">A Brief History Of Time</h2>
+            <p class="cardinfo"> Author : Stephen Hawking</p>
+            <button class="card-button fw-bold buy-button">Buy Now</button>
+          </div>
+        </div>
+        <div class="newbooks-card">
+          <img src="./images/newarrivals4.jpg" class="card-img-top newarrivalimg-height" alt="...">
+          <div class="cardbody">
+            <h2 class="cardtitle">The Dream of the Red Chamber</h2>
+            <p class="cardinfo">Author : Cao Xueqin</p>
+            <button class="card-button fw-bold buy-button">Buy Now</button>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="fictionbooks">
+      <h2 class="text-center m-5">Trending Sellers in Crime Thrillers and Autobiographies</h2>
+      <div class="grid-container">
+        <div class="grid-item1">
+        </div>
+        <div class="grid-item2">
+        </div>
+      </div>
+    </section>
+
+    <section class="awardsellers">
+      <h2 class="text-center m-5">Award Winners</h2>
+      <div class="awardbooklist">
+        <div class="awardbook-card">
+         <div class="front">
+          <img src="./images/awardwinner1.jpg" class="awardbookimg-height" alt="...">
+         </div>
+         <div class="back">
+          <h2>Far Outside the Ordinary</h2>
+          <p>Author : Prissy Elrod</p>
+          <button class="awardbook-buybutton btn btn-secondary">Buy Now</button>
+        </div>
+        </div>
+        <div class="awardbook-card">
+          <div class="front">
+           <img src="./images/awardwinner2.jpg" class="awardbookimg-height" alt="...">
+          </div>
+          <div class="back">
+           <h2>A Love & Beyond</h2>
+           <p>Author : Dan Sofer</p>
+           <button class="awardbook-buybutton btn btn-secondary">Buy Now</button>
+          </div>
+         </div>
+         <div class="awardbook-card">
+          <div class="front">
+           <img src="./images/awardwinner3.jpg" class="awardbookimg-height" alt="...">
+          </div>
+          <div class="back">
+           <h2>The Wangs Vs. The World</h2>
+           <p>Author : Jade Chang</p>
+           <button class="awardbook-buybutton btn btn-secondary">Buy Now</button>
+          </div>
+         </div>
+         <div class="awardbook-card">
+          <div class="front">
+           <img src="./images/awardwinner4.jpg" class="awardbookimg-height" alt="...">
+          </div>
+          <div class="back">
+           <h2>Widow Walk</h2>
+           <p>Author : Gerard Lasalle</p>
+           <button class="awardbook-buybutton btn btn-secondary">Buy Now</button>
+          </div>
+         </div>
+
+      </div>
+    </section>
+
+    <h2 class="text-center m-5">Books of the Month</h2>
+    <section class="monthbestbooks">
+      <div class="my-5 monthbestbooksdiv">
+          <div class="card monthbook-card" style="width: 16rem;">
+              <img src="./images/alchemist.jpg" class="monthbook-img" alt="...">
+              <div class="card-body text-center paddingmonthbook-buybutton">
+                  <button type="button" class="monthbook-detailsbutton btn btn-secondary" data-bs-toggle="modal" data-bs-target="#firstModal">View Details</button>
+              </div>
+              <!-- Modal -->
+  <div class="modal fade" id="firstModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-dark text-white">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Book Details</h1>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center bg-secondary">
+            <h3>Book Name : The Alchemist</h3>
+            <h3>Author : Paulo Coelho</h3>
+            <div>The Alchemist is a novel by Brazilian author Paulo Coelho which was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller. An allegorical novel, The Alchemist follows a young Andalusian shepherd in his journey to the pyramids of Egypt, after having a recurring dream of finding a treasure there.</div>
+          </div>
+          <div class="modal-footer justify-content-center bg-dark">
+            <button type="button" class="monthbook-buybutton btn btn-secondary ">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+          <div class="card monthbook-card" style="width: 16rem;">
+            <img src="./images/gandhiji.jpg" class="monthbook-img" alt="...">
+            <div class="card-body text-center paddingmonthbook-buybutton">
+                <button type="button" class="monthbook-detailsbutton btn btn-secondary" data-bs-toggle="modal" data-bs-target="#secondModal">View Details</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="secondModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Book Details</h1>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center bg-secondary">
+                    <h3>Book Name : The Story of my Experiments with Truth</h3>
+                    <h3>Author : M.K Gandhi</h3>
+                    <div>The Story of My Experiments with Truth ( lit'Experiments of Truth or Autobiography') is the autobiography of Mahatma Gandhi, covering his life from early childhood through to 1921. It was written in weekly installments and published in his journal Navjivan from 1925 to 1929. Its English translation also appeared in installments in his other journal Young India.</div>
+                  </div>
+                  <div class="modal-footer justify-content-center bg-dark">
+                    <button type="button" class="monthbook-buybutton btn btn-secondary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card monthbook-card" style="width: 16rem;">
+          <img src="./images/abdulkalam.jpg" class="monthbook-img" alt="...">
+          <div class="card-body text-center paddingmonthbook-buybutton">
+              <button type="button" class="monthbook-detailsbutton btn btn-secondary" data-bs-toggle="modal" data-bs-target="#thirdModal">View Details</button>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" id="thirdModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Book Details</h1>
+                  <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center bg-secondary">
+                  <h3>Book Name : Ignited Minds</h3>
+                  <h3>Author : A.P.J Abdul Kalam</h3>
+                  <div>Unleashing the Power Within India (2002,) is a book written by Dr. A. P. J. Abdul Kalam, President of India from 2002 to 2007. The book is a logical step forward from Dr. Kalam's earlier book, India 2020: A Vision for the New Millennium (1998,) and consists of many inspirational messages by Dr. A. P. J. Abdul Kalam.</div>
+                </div>
+                <div class="modal-footer justify-content-center bg-dark">
+                  <button type="button" class="monthbook-buybutton btn btn-secondary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="card monthbook-card" style="width: 16rem;">
+        <img src="./images/preetishenoy.jpg" class="monthbook-img" alt="...">
+        <div class="card-body text-center paddingmonthbook-buybutton">
+            <button type="button" class="monthbook-detailsbutton btn btn-secondary" data-bs-toggle="modal" data-bs-target="#fourthModal">View Details</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="fourthModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-dark text-white">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Book Details</h1>
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center bg-secondary">
+                <h3>Book Name : Life is What you make it</h3>
+                <h3>Author : Preeti Shenoy</h3>
+                <div>Life Is What You Make It is a novel by Preeti Shenoy. The book was in "Top books of 2011" as per the Nielsen list which is published in Hindustan Times. It was also on Times of India all-time best sellers of 2011. This is an astonishing love story set in India in 1990s. This is a book of love, hope and how determination can overcome even destiny.</div>
+              </div>
+              <div class="modal-footer justify-content-center bg-dark">
+                <button type="button" class="monthbook-buybutton btn btn-secondary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+    </section>
+    
+    <h2 class="text-center m-5">Featured Author</h2>
+    <section class="authorslist">
+      <div class="my-5 w-100 authorslistdiv">
+        <div class="card authorcard" style="width: 16rem;">
+          <img class="card-img-top card-image" src="./images/arundathiroy.jpg" alt="Card image cap">
+          <div class="card-body authorname">
+            <h5 class="card-title text-center">Arundathi Roy</h5>
+            <a href="#" class="author-viewbutton btn btn-secondary">View More</a>
+          </div>
+        </div>
+        <div class="card authorcard" style="width: 16rem;">
+          <img class="card-img-top card-image" src="./images/gillianflynn.jpeg" alt="Card image cap">
+          <div class="card-body authorname">
+            <h5 class="card-title text-center">Gillian Flynn</h5>
+            <a href="#" class="author-viewbutton btn btn-secondary">View More</a>
+          </div>
+        </div>
+        <div class="card authorcard" style="width: 16rem;">
+          <img class="card-img-top card-image" src="./images/joseph.png" alt="Card image cap">
+          <div class="card-body authorname">
+            <h5 class="card-title text-center">Joseph Annamkutty Jose</h5>
+            <a href="#" class="author-viewbutton btn btn-secondary">View More</a>
+          </div>
+        </div>
+        <div class="card authorcard" style="width: 16rem;">
+          <img class="card-img-top card-image" src="./images/paulocoelho.jpg" alt="Card image cap">
+          <div class="card-body authorname">
+            <h5 class="card-title text-center">Paulo Coelho</h5>
+            <a href="#" class="author-viewbutton btn btn-secondary">View More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="bg-secondary">
+      <div class="footer-links">
+          <div class="d-flex justify-content-evenly footerlinks-div">
+              <div class="d-flex flex-column m-4">
+                  <h2>Company</h2>
+                  <h4 class="fs-5"><a href="#">About Us</a></h4>
+                  <h4 class="fs-5"><a href="#">Career</a></h4>
+                  <h4 class="fs-5"><a href="#">Blog</a></h4>
+                  <h4 class="fs-5"><a href="#">Contact Us</a></h4>
+              </div>
+              <div class="d-flex flex-column m-4">
+                  <h2>Policies</h2>
+                  <h4 class="fs-5"><a href="#">Privacy Policy</a></h4>
+                  <h4 class="fs-5"><a href="#">Terms of Use</a></h4>
+                  <h4 class="fs-5"><a href="#">Secure Shopping</a></h4>
+                  <h4 class="fs-5"><a href="#">Copyright Policy</a></h4>
+              </div>
+              <div class="d-flex flex-column m-4">
+                  <h2>Help</h2>
+                  <h4 class="fs-5"><a href="#">Payment</a></h4>
+                  <h4 class="fs-5"><a href="#">Shipping</a></h4>
+                  <h4 class="fs-5"><a href="#">Return</a></h4>
+                  <h4 class="fs-5"><a href="#">FAQ</a></h4>
+              </div>
+              <div class="d-flex flex-column m-4">
+                  <h2>Misc</h2>
+                  <h4 class="fs-5"><a href="#">Affliate</a></h4>
+                  <h4 class="fs-5"><a href="#">Sitemap</a></h4>
+              </div>
+          </div>
+      </div>
+
+          <div class="socialmedia-icons">
+              <h2 class="text-center my-4">Social media</h2>
+              <div class="d-flex justify-content-center">
+              <a href="#"><i class="fa-brands fa-facebook fa-2x icon m-3"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-2x icon m-3"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-2x icon m-3"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp fa-2x icon m-3"></i></a>
+              </div>
+          </div>
+          <p class="text-center m-0">All rights Reserved &copy; 2023.All Rights Reserved</p>
+  </footer>
+
+
+  </div>
+  <script src="https://kit.fontawesome.com/90eb1c05c7.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

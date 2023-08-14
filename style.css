@@ -1,0 +1,1070 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.site-captionandlogo{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    width: 85%;
+}
+
+.booklogo{
+    width: 80px;
+}
+
+.bookstorename{
+    margin-left: 15px;
+    width: 60%;
+    font-size: 20px;
+}
+
+.booknamesearchbar{
+    height: 30px;
+    width: 100%;
+    margin-left: 4rem;
+    padding: 2px 13px;
+    border: 1px solid;
+}
+
+.width-searchbar{
+    width: 550px;
+}
+
+.width-searchbar a{
+  text-decoration: none;
+  color: black;
+}
+
+.search-icon{
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 38px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-option{
+  border-radius: 10px !important;
+  color: black !important;
+}
+
+.profile-option:hover a{
+  background-color: black;
+  color: white !important;
+  border-radius: 15px;
+}
+
+.book-category a:hover{
+  background-color: black !important;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.user-icon{
+    padding: 5px;
+}
+
+.dropdown{
+    cursor: pointer;
+}
+
+.vertical-line{
+    border-left: 2px solid black;
+}
+
+.icon-space{
+    margin: 0px 5px;
+}
+
+.ml-account{
+    margin-left: 590px;
+}
+
+.bookcategorylistbutton{
+    width: 30px;
+    height: 30px;
+    /* border: 0px solid !important; */
+    border-radius: 50px !important;
+    background-color: darkgray !important;
+    padding: 0px !important;
+}
+
+.sec-nav{
+    background-color: lightblue !important;
+    padding: 10px 0px !important;
+    border: 2px solid black;
+}
+
+.carouseltext-caption h5{
+  color: black;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.carouseltext-caption p{
+  color: black;
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.saleCaption{
+    display: flex;
+    height: 75px;
+    justify-content: center;
+    background-image: url("./images/bookwallpaper.jpg");
+    background-position: bottom;
+    background-size: cover;
+    align-items: center;
+}
+
+.carousel-item {
+    height: 80vh;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 80vh;
+  }
+
+  .trendingbook{
+    width: 100%;
+    display: flex;
+    height: 85vh;
+    background-image: url("./images/back1.jpg");
+  }
+
+  .booklist{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+    /* background-color: bisque; */
+  }
+
+  .trendingcard{
+    margin: 50px;
+    height: 360px !important;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    /* width: 350px !important; */
+  }
+
+  .img-height{
+    height: 360px;
+    border-radius: 3px;
+    opacity: 1;
+  }
+
+  .details{
+    height: 45px;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27,27,0.5);
+    color: white;
+    bottom: 0;
+  }
+
+  .card:hover{
+    cursor: pointer;
+  }
+
+  .cardtext-button{
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    width: 200px;
+  }
+
+  .card:hover .details{
+    height: 170px;
+    background: black;
+  }
+
+  .card:hover .cardtext-button{
+   visibility: visible;
+   opacity: 1;
+  }
+
+  .bookset-imagediv{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/bookset.png");
+    background-size: cover;
+  }
+
+  .booksetimg{
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/bookset.png");
+    background-size: cover;
+  }
+
+  .civilbooks{
+    margin-top: 50px;
+  }
+
+  .bestsellers{
+    background-image: url("./images/back2.jpg");
+    padding: 5px 0px;
+  }
+
+  .bestsellingbooklist{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+   
+  }
+
+  .bestsellbook-card{
+    margin: 10px;
+    height: 210px !important;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .bestsellimg-height{
+    height: 210px;
+    border-radius: 3px;
+    opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  }
+
+  .bestsellbook-card:hover{
+    cursor: pointer;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    /* text-align: center; */
+  }
+  
+  .bestsellbook-card:hover .bestsellimg-height {
+    opacity: 0.3;
+  }
+  
+  .bestsellbook-card:hover .middle {
+    opacity: 1;
+  }
+
+  .buy-button{
+    font-weight: 700;
+    margin-top: 22px;
+    padding: 0px 5px;
+    border-radius: 15px;
+    background-color: darkgrey;
+  }
+
+  .buy-button:hover{
+    background-color: black;
+    color: white;
+  }
+  
+  .text {
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    width: 80px;
+    text-align: center;
+    
+  }
+
+  .newarrivals{
+    width: 100%;
+    /* display: flex; */
+    height: 85vh;
+    background-image: url("./images/back3.jpg");
+    background-size: cover;
+    padding: 5px 0px;
+  }
+
+  .newbooklist{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55vh;
+    /* background-color: bisque; */
+  }
+
+  .newbooks-card{
+    border-radius: 20px;
+    margin: 50px;
+    height: 360px !important;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border: 8px solid white;
+    position: relative;
+  }
+
+  .newarrivalimg-height{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px !important;
+  }
+
+  .cardbody{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 2s;
+  }
+
+  .cardtitle{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .cardsub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .cardinfo{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0px;
+    line-height: 25px;
+  }
+
+  .card-button{
+    color: #1f3d47;
+    width: 88px;
+    background: #8fabba;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .newbooks-card:hover .cardbody{
+    right: 0;
+  }
+
+  .fictionbooks{
+    margin-top: 120px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .bg-black{
+    background-color: black;
+  }
+  
+  .grid-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 683px;
+    width: 100%;
+    background-image: url("./images/fictionalbooks.jpg");
+    background-size: cover;
+  }
+
+  .grid-item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 683px;
+    width: 100%;
+    background-image: url("./images/Autobiography.png");
+    background-size: cover;
+  }
+  
+  .grid-item p {
+    word-spacing: 3px;
+    margin-top: 10px;
+    font-style: italic;
+      font-weight: 600;
+      font-size: 27px;
+      color: white;
+  }
+  
+  .grid-item h1{
+    color: orange;
+  }
+
+  .awardsellers{
+    background-image: url("./images/back4.jpg");
+    background-size: cover;
+    padding: 5px 0px;
+    height: 103vh;
+  }
+
+  .awardbooklist{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+  }
+
+  .awardbook-card{
+    margin: 50px;
+    height: 360px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 3rem;
+    width: 240px;
+    position: relative;
+    color: white;
+    transition: transform 2000ms;
+    transform-style: preserve-3d;
+  }
+
+  .awardbookimg-height{
+    height: 360px;
+    border-radius: 3rem;
+    opacity: 1;
+    width: 100%;
+  }
+
+  .awardbook-card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+
+  .front,.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+
+  .back{
+    background-color: #3a3a3a;
+    transform: rotateY(180deg) rotateZ(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .awardbook-buybutton{
+    width: 50%;
+  }
+
+  .awardbook-buybutton:hover{
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .monthbestbooks{
+    background-image: url("./images/back5.jpg");
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .monthbestbooksdiv{
+    height: 90vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .monthbook-card{
+    margin: 50px;
+    height: 400px !important;
+    box-shadow: 5px 5px 20px black;
+    border: none !important;
+  }
+
+  .monthbook-img{
+    height: 325px;
+  }
+
+  .paddingmonthbook-buybutton{
+    padding: 15px 0px !important;
+    background-color: black;
+  }
+
+  .monthbook-buybutton{
+    width: 26%;
+  }
+
+  .monthbook-detailsbutton{
+    width: 55%;
+  }
+
+  .monthbook-detailsbutton:hover{
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .monthbook-buybutton:hover{
+    background-color: black !important;
+    color: white !important;
+  }
+
+  .authorslist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+
+  .authorslistdiv{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .authorcard{
+    margin: 15px;
+    border: none !important;
+    transition: 1s;
+  }
+
+  .card-image{
+    height: 245px !important;
+    border-radius: 83% !important;
+  }
+
+  .authorname{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px !important;
+  }
+
+  .authorslistdiv{
+    display: flex;
+    align-items: center;
+  }
+
+  .author-viewbutton{
+    width: 50% !important;
+  }
+
+  .author-viewbutton:hover{
+    background-color: black !important;
+    color: white !important;
+  }
+  
+  .authorcard:hover .card-image{
+    transform: scale(1.2);
+    z-index: 2;
+  }
+  
+  footer a{
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 4px 6px;
+  }
+
+  footer a:hover{
+    color: white;
+    background-color: black;
+  }
+
+  footer .footer-links{
+    height: 43vh;
+  }
+
+  .footer-links h4{
+    margin: 16px 0px;
+  }
+
+  .socialmedia-icons a:hover{
+    color: white !important;
+    border-radius: 38px;
+    background-color: black;
+  }
+
+  .socialmedia-icons a{
+    text-decoration: none;
+  }
+
+@media (min-width:992px) and (max-width:1500px){
+    .booklogo{
+        width: 50px;
+    }
+
+    .bookstorename{
+        margin-left: 0px;
+        width: 10%;
+        font-size: 15px;
+    }
+    .ml-account{
+        margin-left: 0px;
+    }
+    .booknamesearchbar{
+        margin-left: 4rem;
+        width: 70%;
+    }
+    
+
+}
+
+@media (min-width:770px) and (max-width:992px){
+    .booklogo{
+        width: 50px;
+    }
+    .bookstorename{
+        margin-left: 0px;
+        width: 10%;
+        font-size: 15px;
+    }
+    .ml-account{
+        margin-left: 30px;
+    }
+    .booknamesearchbar{
+        margin-left: 0rem;
+        width: 60%;
+    }
+    .width-searchbar{
+        width: 550px;
+    }
+
+    .bestsellingbooklist{
+      height: 52vh;
+    }
+
+    .civilbooks{
+        margin-top: 8rem;
+    }
+
+    .trendingbook{
+      height: 88vh;
+    }
+
+    .newarrivals{
+      height : 95vh !important;
+      }
+      
+      .newbooklist{
+      height:80vh !important;
+      flex-direction:column !important;
+      flex-wrap: wrap;
+      }
+      
+      .newbooks-card{
+      margin: 12px 0px !important;
+      }
+
+      .awardsellers{
+        height : 103vh;
+        padding:5px 0px;
+        }
+        
+        .awardbooklist{
+        flex-direction: column;
+            height: 85vh;
+            flex-wrap: wrap;
+        }
+
+        .monthbestbooksdiv{
+          flex-direction: column;
+          height: 90vh;
+          flex-wrap: wrap;
+          display: flex;
+        }
+
+        .monthbook-buybutton{
+          width: 43% !important;
+        }  
+    
+    .authorslistdiv{
+      flex-direction: column;
+    }
+
+    footer .footer-links{
+      height: 25vh;
+    }
+}
+
+@media (max-width:770px){
+    .booklogo{
+        width: 50px;
+    }
+    .bookstorename{
+        margin-left: 0px;
+        width: 10%;
+        font-size: 15px;
+    }
+    .ml-account{
+        margin-left: 30px;
+    }
+    .booknamesearchbar{
+        margin-left: 0rem;
+        width: 60%;
+    }
+    .width-searchbar{
+        width: 400px;
+    }
+    .booklist{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+
+    
+}
+
+@media (max-width:500px){
+    .booklogo{
+        width: 50px;
+    }
+    .bookstorename{
+        margin-left: 0px;
+        width: 10%;
+        font-size: 15px;
+    }
+    .ml-account{
+        margin-left: 30px;
+    }
+    .booknamesearchbar{
+        margin-left: 0rem;
+        width: 60%;
+    }
+    .width-searchbar{
+        width: 230px;
+    }
+    .booklist{
+        height: 204vh;
+    }
+}
+
+@media (min-width:500px) and (max-width:620px){
+    .booklist{
+        height: 255vh;
+    }
+}
+
+@media (max-width:620px){
+    .booklogo{
+        width: 50px;
+    }
+    .bookstorename{
+        margin-left: 0px;
+        width: 10%;
+        font-size: 15px;
+    }
+    .ml-account{
+        margin-left: 30px;
+    }
+    .booknamesearchbar{
+        margin-left: 0rem;
+        width: 60%;
+    }
+    .width-searchbar{
+        width: 125px;
+    }
+
+    .trendingbook{
+      height: 220vh;
+    }
+
+    .newarrivals{
+      height : 220vh !important;
+      }
+      
+      .newbooklist{
+      height:200vh !important;
+      flex-direction:column !important;
+      }
+      
+      .newbooks-card{
+      margin: 12px 0px !important;
+      }
+
+      .awardsellers{
+        height : 250vh;
+        padding:5px 0px;
+        }
+        
+        .awardbooklist{
+        flex-direction: column;
+            height: 240vh;
+        }
+
+        .monthbestbooksdiv{
+          height: 235vh;
+        }
+
+        .monthbook-buybutton{
+          width: 43% !important;
+        }
+
+
+    .bestsellingbooklist{
+        height: 162vh;
+    }   
+    
+    .authorslistdiv{
+      flex-direction: column;
+    }
+
+    footer .footer-links{
+      height: 130vh !important;
+    }
+
+    .footerlinks-div{
+      flex-direction: column;
+    }
+    
+}
+
+@media (min-width:620px) and (max-width:700px){
+    .booklist{
+        height: 204vh;
+    }
+}
+
+@media (max-width:380px){
+
+    .trendingbook{
+      height: 300vh;
+    }
+
+    .booklist{
+        height: 300vh;
+    }
+    .civilbooks{
+        /* margin-top: 1500px; */
+    }
+
+    .newarrivals{
+      height : 243vh !important;
+      }
+      
+      .newbooklist{
+      height:200vh !important;
+      flex-direction:column !important;
+      }
+      
+      .newbooks-card{
+      margin: 12px 0px !important;
+      }
+
+      .awardsellers{
+        height : 270vh;
+        padding:5px 0px;
+        }
+        
+        .awardbooklist{
+        flex-direction: column;
+            height: 240vh;
+        }
+
+        .monthbestbooksdiv{
+          height: 300vh;
+        }
+
+        .monthbook-buybutton{
+          width: 43% !important;
+        }
+
+
+    .bestsellingbooklist{
+        height: 162vh;
+    }   
+    
+    .authorslistdiv{
+      flex-direction: column;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .footer-links{
+      height: 165vh !important;
+    }
+
+    .footerlinks-div{
+      flex-direction: column;
+    }
+}
+
+@media (min-width:992px) and (max-width:1000px){
+    .booklist{
+        /* flex-direction: column; */
+        height: 120vh;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (min-width:1000px) and (max-width:1300px){
+    .booklist{
+        /* flex-direction: column; */
+        height: 150vh;
+        flex-wrap: wrap;
+    }
+
+    /* .civilbooks{
+        margin-top: 27rem;
+    } */
+
+    .bestsellingbooklist{
+        height: 80vh;
+    }
+
+    .trendingbook{
+      height: 155vh;
+    }
+
+    .monthbestbooksdiv{
+      justify-content: center;
+      height: 170vh;
+      flex-wrap: wrap;
+      display: flex;
+    }
+
+    footer .footer-links {
+      height: 47vh;
+  }
+}
+
+@media (min-width:380px) and (max-width:500px){
+    .booklist{
+        /* flex-direction: column; */
+        height: 220vh;
+        flex-wrap: wrap;
+    }
+    /* .civilbooks{
+        margin-top: 75rem;
+    } */
+    .bestsellingbooklist{
+        height: 115vh;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:700px) and (max-width:992px){
+    .booklist{
+        /* flex-direction: column; */
+        height: 85vh;
+        flex-wrap: wrap;
+    }
+
+    .trendingbook{
+      height: 88vh;
+    }
+
+    .newarrivals{
+      height : 100vh !important;
+      flex-wrap: wrap;
+      flex-direction: column;
+      }
+      
+      .newbooklist{
+      height:80vh !important;
+      flex-direction:column !important;
+      flex-wrap: wrap;
+      }
+      
+      .newbooks-card{
+      margin: 12px 0px !important;
+      }
+
+      .awardsellers{
+        height : 103vh;
+        padding:5px 0px;
+        }
+        
+        .awardbooklist{
+        /* flex-direction: column; */
+            height: 85vh;
+            flex-wrap: wrap;
+        }
+
+        .monthbestbooksdiv{
+          flex-direction: column;
+          height: 100vh;
+          flex-wrap: wrap;
+        }
+
+        .monthbook-buybutton{
+          width: 43% !important;
+        }  
+
+        .monthbestbooks{
+          height: 100vh;
+        }
+    
+    .authorslistdiv{
+      flex-direction: column;
+    }
+
+    footer .footer-links{
+      height: 35vh;
+    }
+}
+
+@media (min-width:770px) and (max-width:900px){
+    .booklist{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+}
+
